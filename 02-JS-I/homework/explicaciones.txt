@@ -1,0 +1,40 @@
+Variables:
+Son como cajas que uno debe primero declarar (ponerles nombre) y luego estas pueden contener datos en su interior. Estos datos pueden ser variables, o sea ir cambiando a lo largo del código, o pueden ser datos constantes.
+Ej:
+var perrito = 'cacho';
+
+Strings:
+Son cadenas de caracteres, que pueden ser letras, números o caracteres especiales. El intérprete sabe que es un string porque se escriben entre comillas.
+Ej:
+'cacho'
+
+Funcoines:
+Son fragmentos de código que cumplen una función, hacen algo, y pueden ser reutilizados llamándolas por su nombre.
+Se pueden agregar argumentos a las funciones, que son como variables declaradas y se les pueden asignar datos.
+Return finaliza la ejecución de una función devolviendo un valor.
+Ej:
+function ladra(perrito) {
+	console.log('El ' + perrito + ' ladra mucho');
+}
+ladra('cacho');
+
+function suma(a, b) {
+	return a + b;
+}
+suma(5,6);
+
+Declaraciones if:
+Es una condición dentro de una función que le sirve al intérprete saber si algo es de determinada manera devuelve un valor, de lo contrario devuelva otro. 
+Las declaraciones if pueden estar anidadas, siendo if, else if y else.
+function puedeSalir(dias) {
+	if (dias > 14) {
+		return true;
+	}
+	return false;
+}
+puedeSalir(5); //false
+
+Valores booleanos:
+Son valores como en el sistema binario de 0 y 1. Algo puede ser verdadero o falso. true or false.
+Ej:
+var aguaMojada = true;
