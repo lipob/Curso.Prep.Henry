@@ -1,0 +1,88 @@
+Objetos
+
+Los objetos son contenedores de datos que pueden guardan mucha información sobre sí. 
+Estos datos se definen como pares de clave:valor, en el que la clave es el nombre de una propiedad y el valor es la información guardada en esa clave. 
+Un objeto guarda los pares clave:valor entre laves, y a su vez estos pares se separan por coma.
+
+Ej:
+
+const nuevoObajeto = {
+	nombre: 'Puerta',
+	color:	'negro',
+	altura: 155
+};
+
+Para acceder a los valores se pueden usar puntos o corchetes.
+
+Ej:
+
+nuevoObjeto.nombre; // puerta
+nuevoObjeto['altura']; // 155 
+
+En el caso de los corchetes, se llama a cada clave entre comillas.
+
+Asignar valores se procede de la misma forma que para acceder.
+
+Ej:
+
+nuevoObejto.nombre = 'casa';
+nuevoObjeto['altura'] = 350;
+
+Tambien se puede definir una variable para una clave de objeto.
+
+Ej:
+
+const alturaCm = 'altura';
+nuevoObjeto[alturaCm] = 352; // Definimos un nuevo valor para la clave 'altura'
+
+==================================
+
+Propiedades
+
+Son los pares clave:valor almacenados en un objeto. Cuando se elimina una propiedad desaparece este par clave:valor.
+
+Para eliminarlas se usa la palabra clave delete
+
+Ej.
+
+delete nuevoObejto.color; // Borramos la propiedad 'color'
+
+==================================
+
+Métodos
+
+Los valores que se pueden asignar en una clave de obejto puede ser de cualquier tipo: strings, numeros, booleanos, undifined, null, variables y hasta incluso funciones.
+
+Cuando se usa una función para definir el valor de una propiedad, éste se llamana método.
+
+Ej:
+
+const nuevoObjeto = {
+	color: 'rojo',
+	pintar: function() {
+		console.log('Pintemos la casa de color ' + this.color);
+	}
+}
+
+nuevoObjeto.pintar();
+
+==================================
+
+Bucle for...in
+
+Para recorrer las propiedades de cada par clave:valor de un objeto, JS utiliza un método estandar parecido al que usamos para recorrer los valores de arrays, pero con una sintaxis diferente. Comienza ingual con for, dentro de los parentesis declaramos una variable, seguida de la palabra clave in y luego el nombre del objeto.
+
+Ej:
+
+for (let trabajos in nuevoObjeto) {
+	console.log(trabajos);
+	console.log(nuevoObjeto[trabajos]);
+}
+
+=====================================
+
+Notación de puntos vs notacion de corchete
+
+Con la notación de pntos podemos llamar a un objeto punto el nombre de la clave.
+
+Con la notación de corchete llamamos al objeto y dentro de los corchetes escribimos un string o numero para la clave, o una variable que apunte al string o numero.

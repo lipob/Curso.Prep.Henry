@@ -1,0 +1,12 @@
+Arrays.
+
+Un array es como un tubo en donde vamos almacenando bolitas ordenadamente. Cada bolita tiene un valor y se ubican en orden.Conociendo la posición de cada bolita se puede acceder a su valor. Tambien se pueden agregar nuevas boitas alfinal de la cola y al principio.
+
+los arrays se escriben entre corchetes y cada valor va separado por comas.
+
+Ej. 
+
+const array = ['bolita-1', 'bolita-2', 'bolita-3'];
+
+array[1];
+// Devuelve 'bolita-2'

@@ -1,0 +1,35 @@
+For
+
+Es un bucle que evalua expresiones una y otra vez hasta devolviendo los resultados que estamos buscando, y se detiene de acuerdo a una condición determimanada previamente. 
+
+Puede ser que ocurran bucles infintos si la condición en la expresión no encuentra la forma de finalizarlo.
+
+El loop for se compone por la palabra clave "for" seguida de parentesis dentro de los cuales se declara una variable, una condición y un incremento, estas 3 declaraciones separadas por punto y coma.
+
+Ej.:
+
+for ( let i = 0; i < 10; i++ ) {
+	console.log( i );
+}
+
+---
+
+Operadores lógicos &&, || y !
+
+Sirven para combinar 2 expresiones de las cuales ambas pueden ser verdades (&&), una puede ser verdadera (||) o ninguna lo es.
+
+a && b (a y b)
+a || b (a o b)
+!a && !b (no a y no b)
+!a || !b (no a y no b)
+
+El operador logico ! (no) revierte un valor.
+
+Se puede ver cómo fncionan de manera más gráfica con el cuadro de la verdad:
+
+
+p	q	p && q	p || q
+v	v	v	v
+v	f	f	v
+f	v	f	v
+f	f	f	f
