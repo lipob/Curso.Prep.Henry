@@ -1,0 +1,15 @@
+Prototype:
+
+Un prototipo es como un modelo preconstruido de algo, al que se le pueden asignar ciertas funciones o métodos, que luego podrán ser replicadas en los objetos contruidos en base a ese prototipo.
+
+Si a un nuevo objeto se le llama a una función que por defecto este no posee, el sistema buscará en el prototipo si esa función exites y si existe la ejecutará en base a las propiedades de este nuevo objeto.
+
+Constructor:
+
+Una clase es como una plantilla para construir nuevos objetos. Podría ser el sustantivo de un lenguaje. 
+
+A esta plantilla se leasignarán las propiedades que deban tener los objetos creados en base a esta. 
+
+Por ejemplo, si la plantilla es un Animal, tendrás las propiedades para los nuevos animales que vayan a crearse. Podrían ser 'especie', 'color', 'tamaño', 'alimentación'...
+
+Por convención, cuando una clase es creada, su nombre se escribe con mayúscula.
