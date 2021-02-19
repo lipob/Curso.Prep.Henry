@@ -1,0 +1,5 @@
+Funciones Callback
+
+"Te llamo luego."
+Estas funciones se utilizan se pasan como argumento a otras funciones, y pueden llamarse en cualquier momento. 
+Permite a una función llamar a otra función y así ejecutarlas como una secuencia.

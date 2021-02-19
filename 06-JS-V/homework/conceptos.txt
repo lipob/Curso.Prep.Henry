@@ -4,6 +4,12 @@ Un prototipo es como un modelo preconstruido de algo, al que se le pueden asigna
 
 Si a un nuevo objeto se le llama a una función que por defecto este no posee, el sistema buscará en el prototipo si esa función exites y si existe la ejecutará en base a las propiedades de este nuevo objeto.
 
+Para agregar un método al constructor de clase se escribe el código:
+
+Constructor.prototype.elMetodo = function() {
+	// aquí va la función que se agrega al contructor
+}
+
 Constructor:
 
 Una clase es como una plantilla para construir nuevos objetos. Podría ser el sustantivo de un lenguaje. 
@@ -13,3 +19,11 @@ A esta plantilla se leasignarán las propiedades que deban tener los objetos cre
 Por ejemplo, si la plantilla es un Animal, tendrás las propiedades para los nuevos animales que vayan a crearse. Podrían ser 'especie', 'color', 'tamaño', 'alimentación'...
 
 Por convención, cuando una clase es creada, su nombre se escribe con mayúscula.
+
+Una función constructora de clase con sus propiedades se declara así:
+
+function LaClase() {
+	this.propiedad = propiedad;
+)
+
+En ese caso, la palabra clave this hará referencia al nuevo objeto creado a partir de ese constructor.

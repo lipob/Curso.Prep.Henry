@@ -1,0 +1,19 @@
+/* Estilos del trabajo práctico HTML / CSS */
+
+h1 {
+	color: #83c34f;
+}
+img {
+	width: 400px;
+}
+#thirdDiv {
+	width: 500px;
+	height: 600px;
+	background-color: #eeeeee;
+	padding: 50px;
+	border: 5px dotted #cccccc;
+}
+#spanId {
+	font-size: 18px;
+	margin: 50px;
+}
